@@ -1,0 +1,200 @@
+:root {
+  --color-fondo: #fdf6ec;
+  --color-oscuro: #3e2723;
+  --color-acento: #c97b43;
+  --color-texto: #6d4c41;
+  --color-borde: #ead9c6;
+  --color-claro: #e8d5c0;
+  --color-blanco: #ffffff;
+  --fuente-titulos: 'Playfair Display', Georgia, serif;
+  --fuente-texto: 'Roboto', Arial, sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-texto);
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--fuente-titulos);
+}
+
+button, input, textarea{
+    font-family: inherit;
+}
+
+.Principal{
+    padding: 4.5rem;
+    flex: 1;
+}
+
+.header a {
+  color: var(--color-claro);
+  text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-oscuro);
+    padding: 1rem;
+}
+
+.header-title{
+    padding: 0.5rem 1rem;
+    color: var(--color-claro);
+    font-size: 1.3rem;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+}
+
+.header li{
+    margin-right: 4rem;
+    color: var(--color-claro);
+    transition: 0.3s;
+}
+
+.header a:hover {
+    color: var(--color-acento);
+}
+
+.Titulos{
+    text-align: center;
+}
+
+.Titulos h1{
+    color: var(--color-oscuro);
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
+
+.Titulos p{
+    padding-bottom: 1.5rem;
+    color: var(--color-texto);
+}
+
+.But-1{
+    font-size: 17px;
+    width: 7rem;
+    height: 2.5rem;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.But-1:hover{
+    opacity: 1;
+}
+
+.Menu{
+    text-align: center;
+    margin: 2rem;
+}
+
+.Menu-title{
+    font-weight: 300;
+    color: var(--color-oscuro);
+}
+
+.info-cards div{
+    display: inline-block;
+    background-color: var(--color-blanco);
+    width: 320px;
+    margin: 2rem;
+    min-height: 140px;
+    border: 2px solid var(--color-borde);
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card h3{
+    color: var(--color-oscuro);
+    font-weight: 300;
+    padding: 1rem 4px 4px 4px;
+}
+
+.card p{
+    color: var(--color-texto);
+    padding: 4px 1rem;;
+}
+
+.card h2{
+    color: var(--color-acento);
+    margin-top: 0.6rem;
+}
+
+.info-cards div:hover{
+    border-color: var(--color-acento);
+    transform: translateY(-4px);
+}
+
+.formulario{
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.title-form {
+    text-align: center;
+    font-weight: 300;
+    color: var(--color-oscuro);
+    margin-bottom: 1rem;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    color: var(--color-texto);
+    font-size: 0.9rem;
+}
+
+.input-group input,
+.input-group textarea {
+    background-color: black;
+    border: 1.5px solid var(--color-borde);
+    border-radius: 6px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.But-2{
+    color: var(--color-blanco);
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.But-2:hover{
+    opacity: 1;
+}
+
+footer{
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    text-align: center;
+    padding: 15px;
+}
